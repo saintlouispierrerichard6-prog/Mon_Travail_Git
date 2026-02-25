@@ -41,3 +41,22 @@ button:hover {
     background-color: #004d40;
 }
 
+.navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #1e1e1e;
+    display: flex;
+}
+
+.navbar ul li{
+   position: relative;
+
+}
+
+.navbar ul li a{
+   display: block;
+   padding : 15px 20px;
+   color: white;
+   text-decoration: none;
+}
