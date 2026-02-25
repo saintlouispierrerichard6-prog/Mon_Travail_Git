@@ -261,3 +261,693 @@ p {
   outline: 3px solid red;
   outline-offset: -5px;
 }
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+/*
+
+auto - Valeur par défaut. La dernière ligne est Gauche justifiée et alignée
+left - La dernière droite est alignée sur le gauche
+right - La dernière droite est alignée sur le D’accord
+center - La dernière droite est alignée au centre
+justify - La dernière ligne est justifiée par Le reste des lignes
+start - La dernière droite est alignée à la Début de la ligne
+end - La dernière ligne est alignée à la fin de la ligne
+left - Aligne le texte vers la gauche
+right - Aligne le texte vers la droite
+center - Centrer le texte
+justify - Étire les lignes de sorte que chaque ligne a une largeur égale
+
+La propriété précise comment aligner la dernière ligne d’un texte.text-align-last
+
+*/
+h1 {
+  text-align: center;
+}
+
+/*
+  CSS possède les propriétés de structure suivantes :
+
+outline-style- Spécifie le style du contour
+outline-color- Spécifie la couleur du contour
+outline-width- Spécifie la largeur du contour
+outline-offset- Ajoute un espace entre le contour et le bord d'un élément
+outline- Une propriété abrégée
+
+CSS La propriété outline-style
+Cette outline-stylepropriété spécifie le style du contour et peut prendre l'une des valeurs suivantes :
+
+dotted- Définit un contour en pointillés
+dashed- Définit un contour en pointillés
+solid- Définit un contour net
+double- Définit un double contour
+groove- Définit un contour rainuré en 3D
+ridge- Définit un contour strié en 3D
+inset- Définit le contour d'un encart 3D
+outset- Définit un contour extérieur en 3D
+none- Ne définit aucun contour
+hidden- Définit un contour caché
+
+Largeur du contour CSS
+Cette outline-widthpropriété spécifie la largeur du contour et peut prendre l'une des valeurs suivantes :
+
+thin(généralement 1px)
+medium(généralement 3px)
+thick(généralement 5px)
+Une taille spécifique (en px, pt, cm, em, etc.)
+
+Décalage du contour CSS
+Cette outline-offsetpropriété ajoute un espace transparent entre le contour et le bord de l'élément.
+
+Décalage du contour CSS avec valeur négative
+L'exemple suivant illustre l'utilisation d'un décalage de contour avec une valeur négative ; le contour sera alors placé à l'intérieur du bord de la bordure :
+
+*/
+
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+
+p {
+  padding: 5px;
+  outline-style: solid;
+  outline-color: green;
+}
+
+p.ex1 {
+  outline-width: thin;
+}
+
+p.ex2 {
+  outline-width: medium;
+}
+
+p.ex3 {
+  outline-width: thick;
+}
+
+p.ex4 {
+  outline-width: 8px;
+}
+
+p {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+p.ex1 {
+  outline-style: solid;
+  outline-color: red;
+}
+
+p.ex2 {
+  outline-style: dotted;
+  outline-color: blue;
+}
+
+p.ex3 {
+  outline-style: outset;
+  outline-color: green;
+}
+
+p.ex4 {
+  outline-style: solid;
+  outline-color: invert;
+}
+
+p.ex3 {
+  outline: 7px solid yellow;
+  border-radius: 5px;
+}
+
+p {
+  margin: 30px;
+  padding: 5px;
+  border: 1px solid black;
+  outline: 3px solid red;
+  outline-offset: 15px;
+}
+
+p {
+  margin: 30px;
+  padding: 5px;
+  background: yellow;
+  border: 1px solid black;
+  outline: 3px solid red;
+  outline-offset: -5px;
+}
+
+/*
+Texte
+body {
+  background-color: lightgrey;
+  color: blue;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+div {
+  background-color: blue;
+  color: white;
+}
+
+Alignement et direction du texte CSS
+Dans ce chapitre, vous découvrirez les propriétés suivantes :
+
+text-align
+text-align-last
+vertical-align
+direction
+unicode-bidi
+Alignement du texte
+Cette text-alignpropriété permet de définir l'alignement horizontal d'un texte.
+
+Cette propriété peut prendre l'une des valeurs suivantes :
+
+left- Aligne le texte à gauche
+right- Aligne le texte à droite
+center- Centre le texte
+justify- Étire les lignes pour que chaque ligne ait une largeur égale
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: right;
+}
+
+Alignement du texte Dernier
+Cette text-align-lastpropriété spécifie comment aligner la dernière ligne d'un texte.
+
+Cette propriété peut prendre l'une des valeurs suivantes :
+
+autoValeur par défaut. La dernière ligne est justifiée et alignée à gauche.
+left- La dernière ligne est alignée à gauche
+right- La dernière ligne est alignée à droite
+center- La dernière ligne est centrée.
+justify- La dernière ligne est justifiée comme les autres lignes
+start- La dernière ligne est alignée au début de la ligne
+end- La dernière ligne est alignée à la fin de la ligne
+
+p.a {
+  text-align-last: right;
+}
+
+p.b {
+  text-align-last: center;
+}
+
+p.c {
+  text-align-last: justify;
+}
+
+p.a {
+  text-align-last: right;
+}
+
+p.b {
+  text-align-last: center;
+}
+
+p.c {
+  text-align-last: justify;
+}
+
+Alignement vertical
+Cette vertical-alignpropriété définit l'alignement vertical d'un élément.
+
+Cette propriété peut prendre l'une des valeurs suivantes :
+
+baselineValeur par défaut. L'élément est aligné sur la ligne de base de l'élément parent.
+length/%- Augmente ou diminue la valeur d'un élément de la longueur ou du pourcentage spécifié.
+sub- L'élément est aligné sur la ligne de base de l'indice de l'élément parent
+superL'élément est aligné sur la ligne de base en exposant de l'élément parent.
+top- L'élément est aligné avec le haut de l'élément le plus haut de la ligne
+text-top- L'élément est aligné avec le haut de la police de l'élément parent
+middle- L'élément est placé au milieu de l'élément parent
+bottom- L'élément est aligné avec l'élément le plus bas sur la ligne
+text-bottom- L'élément est aligné avec le bas de la police de l'élément parent.
+
+img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+  vertical-align: super;
+}
+
+Décoration de texte CSS
+Cette propriété CSS permet de contrôler l'apparence des lignes décoratives sur le texte. text-decoration
+
+Il s'agit d'une propriété abrégée pour les propriétés individuelles suivantes :
+
+text-decoration-line
+text-decoration-color
+text-decoration-style
+text-decoration-thickness
+Ajouter une ligne décorative au texte
+La propriété CSS définit le type de ligne de décoration ajoutée au texte. text-decoration-line
+
+Cette propriété peut prendre une ou plusieurs des valeurs suivantes :
+
+none- Valeur par défaut. N'affiche aucune ligne décorative
+underline- La ligne décorative s'affiche sous le texte
+overline- La ligne décorative s'affiche au-dessus du texte
+line-through- La ligne décorative est affichée à travers le texte.
+
+h1 {
+  text-decoration-line: overline;
+}
+
+h2 {
+  text-decoration-line: line-through;
+}
+
+h3 {
+  text-decoration-line: underline;
+}
+
+p {
+  text-decoration-line: overline underline;
+}
+
+Spécifiez une couleur pour la ligne décorative
+La propriété CSS est utilisée pour définir la couleur de la ligne décorative. text-decoration-color.
+
+h1 {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+}
+
+h2 {
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-color: green;
+}
+
+p {
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;
+}
+
+Spécifiez un style pour la ligne de décoration
+La propriété CSS définit le style de la ligne de décoration. text-decoration-style
+
+Cette propriété peut prendre l'une des valeurs suivantes :
+
+solid- Valeur par défaut. Ligne unique
+double- Double ligne
+dotted- Ligne pointillée
+dashed- Ligne pointillée
+wavy- Ligne ondulée
+
+h1 {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+h2 {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+p.ex1 {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+
+p.ex2 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+p.ex3 {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+
+  La propriété CSS permet de définir l'épaisseur de la ligne décorative. text-decoration-thickness.
+
+  h1 {
+  text-decoration-line: underline;
+  text-decoration-thickness: auto;
+}
+
+h2 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 25%;
+}
+
+p {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;
+}
+
+La propriété de sténographie
+La propriété CSS est une propriété abrégée pour : text-decoration
+
+text-decoration-line(requis)
+text-decoration-color(facultatif)
+text-decoration-style(facultatif)
+text-decoration-thickness(facultatif)
+
+h1 {
+  text-decoration: underline;
+}
+
+h2 {
+  text-decoration: underline red;
+}
+
+h3 {
+  text-decoration: underline red double;
+}
+
+p {
+  text-decoration: underline red double 5px;
+}
+
+Par défaut, tous les liens HTML sont soulignés. Il arrive parfois que certains liens ne soient pas soulignés. La propriété `soulign()` text-decoration: 
+none;permet de supprimer le soulignement des liens, comme ceci :
+
+a {
+  text-decoration: none;
+}
+
+Transformation de texte CSS
+La propriété CSS est utilisée pour contrôler la mise en majuscules du texte dans un élément. text-transform
+
+Il peut être utilisé pour transformer un texte en lettres majuscules ou minuscules, ou pour mettre en majuscule la première lettre de chaque mot, sans modifier le contenu HTML original.
+
+Cette propriété peut prendre l'une des valeurs suivantes :
+
+noneAucune transformation. Le texte s'affiche tel quel.
+capitalize- Transforme la première lettre de chaque mot en majuscule
+uppercase- Convertit tous les caractères en majuscules
+lowercase- Convertit tous les caractères en minuscules.
+
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform:
+
+
+Espacement du texte CSS
+CSS possède plusieurs propriétés permettant de contrôler l'espacement du texte.
+
+Dans ce chapitre, vous découvrirez les propriétés suivantes :
+
+text-indent
+letter-spacing
+line-height
+word-spacing
+white-space
+Indentation du texte CSS
+La text-indentpropriété CSS est utilisée pour spécifier l'indentation de la première ligne d'un bloc de texte.
+
+Conseil : Les valeurs négatives sont autorisées. La première ligne sera décalée vers la gauche si la valeur est négative.
+
+p {
+  text-indent: 50px;
+}
+
+Espacement des lettres CSS
+La propriété CSS est utilisée pour spécifier l'espace entre les caractères d'un texte. letter-spacing
+
+Conseil : Les valeurs négatives sont autorisées.
+
+h1 {
+  letter-spacing: 5px;
+}
+
+h2 {
+  letter-spacing: -2px;
+}
+
+Hauteur de ligne CSS
+La propriété CSS line-heightest utilisée pour spécifier l'espace entre les lignes.
+
+Remarque : les valeurs négatives ne sont pas autorisées.
+
+p.small {
+  line-height: 0.8;
+}
+
+p.big {
+  line-height: 1.8;
+}
+
+
+Espacement des mots CSS
+Cette word-spacingpropriété CSS permet de spécifier l'espace entre les mots d'un texte.
+
+Conseil : Les valeurs négatives sont autorisées.
+
+p.one {
+  word-spacing: 10px;
+}
+
+p.two {
+  word-spacing: -2px;
+}
+
+
+Espace blanc CSS
+Cette white-spacepropriété CSS spécifie comment les espaces blancs à l'intérieur d'un élément sont gérés.
+
+Cette propriété peut prendre l'une des valeurs suivantes :
+
+normal
+nowrap
+pre
+pre-line
+pre-wrap
+Exemple
+Comment désactiver le retour à la ligne automatique à l'intérieur d'un élément
+
+p {
+  white-space: nowrap;
+}
+
+Ombre de texte CSS
+Cette text-shadowpropriété ajoute une ombre au texte.
+
+Dans sa forme la plus simple, il suffit de spécifier l'ombre horizontale et l'ombre verticale.
+
+De plus, vous pouvez ajouter une couleur d'ombre et un effet de flou.
+
+
+Effet d'ombre sur le texte !
+Exemple
+Ombre horizontale et verticale :
+
+h1 {
+  text-shadow: 2px 2px;
+}
+
+Effet d'ombre sur le texte !
+Exemple
+Ombre horizontale et verticale, avec couleur :
+
+h1 {
+  text-shadow: 2px 2px red;
+}
+
+Ensuite, ajoutez un effet de flou (5 px) à l'ombre :
+
+Effet d'ombre sur le texte !
+Exemple
+Ombre horizontale et verticale, avec effet de couleur et de flou :
+
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+
+Effet d'ombre sur le texte !
+Exemple
+Ombre portée sur un texte blanc :
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+Exemple
+Ombre portée du texte avec une lueur néon rouge :
+
+h1 {
+  text-shadow: 0 0 3px #ff0000;
+}
+
+Exemple
+Ombre portée du texte avec une lueur néon rouge et bleue :
+
+h1 {
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+Exemple
+Ombre portée du texte avec une lueur néon noire, bleue et rouge :
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px red;
+}
+
+La font-stylepropriété CSS spécifie le style de police d'un texte.
+
+Cette propriété peut prendre l'une des valeurs suivantes :
+
+normalLe texte s'affiche normalement
+italic- Le texte est affiché en italique
+oblique- Le texte est « incliné » (l'oblique est très similaire à l'italique).
+
+Épaisseur de police CSS
+Cette font-weightpropriété CSS spécifie l'épaisseur des caractères d'un texte.
+
+Cette propriété peut prendre l'une des valeurs suivantes :
+
+normal- Ceci est la valeur par défaut. Définit les caractères normaux
+bold- Définit les caractères gras
+bolder- Définit des caractères plus épais
+lighter- Définit les caractères plus clairs
+100-900Définit l'épaisseur des caractères, de fins à épais. 400 correspond à une épaisseur normale, et 700 à une épaisseur en gras.
+
+Variante de police CSS
+Cette font-variantpropriété CSS spécifie si un texte doit être affiché en petites capitales.
+
+En petites capitales, toutes les lettres minuscules sont converties en majuscules. Cependant, les majuscules converties 
+apparaissent dans une police plus petite que les majuscules d'origine dans le texte.
+
+*/
+
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+
+p.normal {
+  font-weight: normal;
+}
+
+p.light {
+  font-weight: lighter;
+}
+
+p.thick {
+  font-weight: bold;
+}
+
+p.thicker {
+  font-weight: 900;
+}
+
+p.normal {
+  font-variant: normal;
+}
+
+p.small {
+  font-variant: small-caps;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px; /* Base font size */
+}
+
+h1 {
+  font-size: 2.5em; /* 2.5 * 16 = 40px */
+}
+
+h2 {
+  font-size: 1.875em; /* 1.875 * 16 = 30px */
+}
+
+p {
+  font-size: 1em; /* 1 * 16 = 16px */
+}
+
+html {
+  font-size: 16px; /* Set the root font size */
+}
+
+h1 {
+  font-size: 2.5rem; /* 2.5 * 16 = 40px */
+}
+
+h2 {
+  font-size: 1.875rem; /* 1.875 * 16 = 30px */
+}
+
+p {
+  font-size: 1rem; /* 1 * 16 = 16px */
+}
+
